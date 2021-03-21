@@ -1,0 +1,7 @@
+tensorflow-gpu==1.15 
+scikit-image
+Keras==2.3.1
+ipython
+imgaug
+pycocotools
+'h5py<3.0.0'
