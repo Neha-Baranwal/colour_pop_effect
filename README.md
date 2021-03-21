@@ -7,7 +7,7 @@ The working principle of the system is easy, we are using the object segmention 
 
 ### Installaion Help
 
-You need to install following dependencis to run the code. You can use the requirements.txt to install these dependencies. To get the pretrained model, you can use the link below.Mask-RCNN Pretrained Model :- You may download the model from the below link.
+You need to install following dependencis to run the code. You can use the requirements.txt to install these dependencies. To get the pretrained model, you can use the link given below. After downloading the model, place it in the models directory.
 https://github.com/matterport/Mask_RCNN/releases/download/v2.0/mask_rcnn_coco.h5
 
 ```
