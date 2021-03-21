@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Colour Pop Effect</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body onLoad='init()'>
+<header class="navbar navbar-default">
+  <span class="navbar-text"> Please upload an Image!  
+  </span>
+</header>
+<script>
+var width=window.innerWidth;
+var height=window.innerHeight;
+document.getElementById("pic").width = width*0.9;
+document.getElementById("pic").height = height*0.9;
+</script>
+
+<div id="BBox" class="alert alert-success" style="margin-top:18px;">
+     <form action="/processImage" method="post" enctype="multipart/form-data" >
+        <label class="btn btn-default btn-file">
+             Browse <input type="file" name="image" style="display: none;">
+        </label>
+        <input type="submit" value="Upload your image" class="btn btn-primary">
+    </form>
+</div>
+
+<div class="text-center">
+        <div class="alert alert-info" style="margin-top:18px;" >
+	    <img id="pic" src=" {{image_name}}" height="500" width="500" >
+        </div>
+</div>
+
+
+</body>
+</html>
+
